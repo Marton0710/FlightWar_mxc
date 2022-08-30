@@ -1,4 +1,4 @@
-#define LESSON  3
+#define LESSON  1
 #include <iostream>
 #include "lesson_1.cpp"
 #include "lesson_2.cpp"

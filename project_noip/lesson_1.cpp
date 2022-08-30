@@ -3,13 +3,33 @@
 using namespace std;
 
 
-//0000 0011 -> 3位 0001 1000
-//0000 0011 -> 7位 1000 0001
-int horse(int num, int step, int space=8, bool isRight=false)
+template<typename T>
+inline T const& Max(T const& a, T const& b)
 {
+    return a > b ? a : b;
 }
+
+
+class A
+{
+public:
+    typedef int SubType;
+
+};
+template<class T>
+class B
+{
+public:
+    typename T::SubType a = 1;
+};
 
 int lesson1_main()
 {
+    int a = 1;
+    int b = 4;
+    cout << Max(a, b) << endl;
+
+    B<A> c;
+
     return 0;
 }
